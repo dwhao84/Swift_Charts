@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		D3D45AC32D3CF8CA00E9A991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D45AC22D3CF8CA00E9A991 /* AppDelegate.swift */; };
 		D3D45AC52D3CF8CA00E9A991 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D45AC42D3CF8CA00E9A991 /* SceneDelegate.swift */; };
-		D3D45AC72D3CF8CA00E9A991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D45AC62D3CF8CA00E9A991 /* ViewController.swift */; };
+		D3D45AC72D3CF8CA00E9A991 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D45AC62D3CF8CA00E9A991 /* HomeController.swift */; };
 		D3D45ACC2D3CF8CB00E9A991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D45ACB2D3CF8CB00E9A991 /* Assets.xcassets */; };
 		D3D45ACF2D3CF8CB00E9A991 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D45ACD2D3CF8CB00E9A991 /* LaunchScreen.storyboard */; };
 		D3D45ADA2D3CF8CB00E9A991 /* Swift_ChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D45AD92D3CF8CB00E9A991 /* Swift_ChartsTests.swift */; };
 		D3D45AE42D3CF8CB00E9A991 /* Swift_ChartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D45AE32D3CF8CB00E9A991 /* Swift_ChartsUITests.swift */; };
 		D3D45AE62D3CF8CB00E9A991 /* Swift_ChartsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D45AE52D3CF8CB00E9A991 /* Swift_ChartsUITestsLaunchTests.swift */; };
+		D3D45AF52D3CFCF700E9A991 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = D3D45AF42D3CFCF700E9A991 /* DGCharts */; };
+		D3D45AF72D3CFCF700E9A991 /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D3D45AF62D3CFCF700E9A991 /* DGChartsDynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		D3D45ABF2D3CF8CA00E9A991 /* Swift_Charts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_Charts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D45AC22D3CF8CA00E9A991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D45AC42D3CF8CA00E9A991 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D3D45AC62D3CF8CA00E9A991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3D45AC62D3CF8CA00E9A991 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		D3D45ACB2D3CF8CB00E9A991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3D45ACE2D3CF8CB00E9A991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3D45AD02D3CF8CB00E9A991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D45AF72D3CFCF700E9A991 /* DGChartsDynamic in Frameworks */,
+				D3D45AF52D3CFCF700E9A991 /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				D3D45AF22D3CF97C00E9A991 /* Supporting Files */,
-				D3D45AC62D3CF8CA00E9A991 /* ViewController.swift */,
+				D3D45AC62D3CF8CA00E9A991 /* HomeController.swift */,
 				D3D45AD02D3CF8CB00E9A991 /* Info.plist */,
 			);
 			path = Swift_Charts;
@@ -148,6 +152,10 @@
 			dependencies = (
 			);
 			name = Swift_Charts;
+			packageProductDependencies = (
+				D3D45AF42D3CFCF700E9A991 /* DGCharts */,
+				D3D45AF62D3CFCF700E9A991 /* DGChartsDynamic */,
+			);
 			productName = Swift_Charts;
 			productReference = D3D45ABF2D3CF8CA00E9A991 /* Swift_Charts.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +228,9 @@
 				Base,
 			);
 			mainGroup = D3D45AB62D3CF8CA00E9A991;
+			packageReferences = (
+				D3D45AF32D3CFC9500E9A991 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = D3D45AC02D3CF8CA00E9A991 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D45AC72D3CF8CA00E9A991 /* ViewController.swift in Sources */,
+				D3D45AC72D3CF8CA00E9A991 /* HomeController.swift in Sources */,
 				D3D45AC32D3CF8CA00E9A991 /* AppDelegate.swift in Sources */,
 				D3D45AC52D3CF8CA00E9A991 /* SceneDelegate.swift in Sources */,
 			);
@@ -601,6 +612,28 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3D45AF32D3CFC9500E9A991 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ChartsOrg/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3D45AF42D3CFCF700E9A991 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DGCharts;
+		};
+		D3D45AF62D3CFCF700E9A991 /* DGChartsDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DGChartsDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D3D45AB72D3CF8CA00E9A991 /* Project object */;
 }
